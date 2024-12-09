@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     padding: 0 10px;
@@ -13,28 +13,29 @@ body{
     justify-content: center;
     background: orange;
 }
-.wrapper{
+
+.wrapper {
     width: 770px;
     padding: 35px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.wrapper .content-box{
-padding: 13px 20px 0;
-border-radius: 10px;
-border: 1px solid #bfbfbf;
+.wrapper .content-box {
+    padding: 13px 20px 0;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
 }
 
-.wrapper .input-field{
+.wrapper .input-field {
     padding: 13px 20px 0;
     position: absolute;
     opacity: 0;
     z-index: -99;
 }
 
-.content-box .content{
+.content-box .content {
     margin-top: 17px;
     display: flex;
     padding: 12px 0;
@@ -44,21 +45,21 @@ border: 1px solid #bfbfbf;
     border-top: 1px solid #bfbfbf;
 }
 
-.content-box .result-details{
+.content-box .result-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:calc(100% - 140px);
+    width: calc(100% - 140px);
 }
 
-.result-details li{
+.result-details li {
     display: flex;
     height: 20px;
     list-style: none;
     align-items: center;
 }
 
-.content button{
+.content button {
     width: 105px;
     outline: none;
     border: none;
@@ -71,28 +72,30 @@ border: 1px solid #bfbfbf;
     transition: transform 0.3s ease;
 }
 
-.content button:active{
+.content button:active {
     transform: scale(0.97);
 }
 
-.typing-text p span{
+.typing-text p span {
     position: relative;
 }
-.typing-text p span.active{
+
+.typing-text p span.active {
     color: orange;
 }
 
-.typing-text p span.correct{
-    color: green
+.typing-text p span.correct {
+    color: green;
 }
-.typing-text p span.incorrect{
+
+.typing-text p span.incorrect {
     color: red;
     outline: 1px solid #fff;
     background: #ffc0cb;
     border-radius: 4px;
 }
 
-::selection{
+::selection {
     color: #fff;
     background: orange;
 }
